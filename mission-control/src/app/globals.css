@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@theme {
+  --color-candy-blue: #3B82F6;
+  --color-candy-green: #22C55E;
+  --color-candy-yellow: #FACC15;
+  --color-candy-pink: #EC4899;
+  --color-candy-purple: #A855F7;
+  --color-candy-orange: #F97316;
+  --color-candy-red: #EF4444;
+  --color-candy-cyan: #06B6D4;
+  --color-bg-main: #FFF8F0;
+  --color-bg-sidebar: #2D1B69;
+  --color-text-primary: #1E1B4B;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  padding: 1.25rem;
+  transition: all 0.2s;
+}
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  transform: translateY(-1px);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-backlog { background: #dbeafe; color: #1d4ed8; }
+.badge-in-progress { background: #fef9c3; color: #a16207; }
+.badge-done { background: #dcfce7; color: #15803d; }
+.badge-urgent { background: #fee2e2; color: #b91c1c; }
+.badge-high { background: #ffedd5; color: #c2410c; }
+.badge-medium { background: #fef9c3; color: #a16207; }
+.badge-low { background: #dcfce7; color: #15803d; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #9CA3AF; }
